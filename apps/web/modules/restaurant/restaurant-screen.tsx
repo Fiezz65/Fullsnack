@@ -10,22 +10,22 @@ import { MenuCategory } from './features/menu-category/menu-category'
 import { Ratings } from './features/ratings/ratings'
 
 export async function RestaurantScreen() {
-  return (
-    <div className="container mx-auto p-4">
-      <RestaurantHeader />
-      <div className="flex py-4">
-        <MenuCategories />
-        <div className="w-3/4 pl-4 flex flex-col gap-4">
-          <RestaurantOptions />
-          <Promotions />
-          <FeaturedItemsCarousel />
-          <RatingsSummary />
-          <MenuCategory />
-          <MenuCategory />
-          <Ratings />
+    return (
+        <div className="container mx-auto p-4">
+            <RestaurantHeader />
+            <div className="flex py-4">
+                <MenuCategories />
+                <div className="w-3/4 pl-4 flex flex-col gap-4">
+                    <RestaurantOptions />
+                    <Promotions />
+                    <FeaturedItemsCarousel />
+                    <RatingsSummary />
+                    <MenuCategory />
+                    <MenuCategory />
+                    <Ratings restaurantId="1" />
+                </div>
+            </div>
+            <Footnotes />
         </div>
-      </div>
-      <Footnotes />
-    </div>
-  )
+    )
 }
