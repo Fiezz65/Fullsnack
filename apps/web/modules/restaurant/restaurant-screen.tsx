@@ -7,13 +7,13 @@ import { RestaurantReviews } from './features/restaurant-reviews/restaurant-revi
 
 export function RestaurantScreen() {
     return (
-        <>
+        <div style={{ padding: '16px' }}>
             <RestaurantHero />
             <RestaurantInfo />
             <RestaurantSavings />
             <RestaurantFeaturedItems />
             <RestaurantMenu />
             <RestaurantReviews />
-        </>
+        </div>
     )
 }
